@@ -79,6 +79,65 @@
         margin: 20px 0;
         border-radius: 4px;
       }
+
+      .sommaire {
+        background-color: rgba(0, 123, 255, 0.15);
+        border: 2px solid #007bff;
+        padding: 30px;
+        margin: 40px 0;
+        border-radius: 8px;
+      }
+
+      .sommaire h2 {
+        margin-top: 0;
+        margin-bottom: 25px;
+        text-align: center;
+        font-size: 26px;
+        color: #007bff;
+        border-bottom: none;
+      }
+
+      .sommaire-section {
+        margin-bottom: 25px;
+      }
+
+      .sommaire-section h3 {
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-size: 20px;
+        color: #007bff;
+      }
+
+      .sommaire ul {
+        list-style-type: none;
+        padding-left: 0;
+        margin-bottom: 0;
+      }
+
+      .sommaire li {
+        margin-bottom: 8px;
+        padding-left: 20px;
+        position: relative;
+      }
+
+      .sommaire li:before {
+        content: "▸";
+        position: absolute;
+        left: 0;
+        color: #007bff;
+      }
+
+      .sommaire a {
+        color: #ffffff;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        display: inline-block;
+      }
+
+      .sommaire a:hover {
+        color: #007bff;
+        transform: translateX(5px);
+      }
     </style>
   </head>
 
@@ -100,10 +159,48 @@
             <p class="header-subtitle">
               Informations légales obligatoires et conditions d'utilisation du site WolfDefansy.
             </p>
+
+            <!-- SOMMAIRE -->
+            <div class="sommaire">
+              <h2>SOMMAIRE</h2>
+              
+              <div class="sommaire-section">
+                <h3>MENTIONS LÉGALES</h3>
+                <ul>
+                  <li><a href="#ml-identification">1. Identification de l'Éditeur du Site</a></li>
+                  <li><a href="#ml-directeur">2. Directeur de la Publication</a></li>
+                  <li><a href="#ml-hebergement">3. Hébergement du Site Internet</a></li>
+                  <li><a href="#ml-propriete">4. Propriété Intellectuelle et Droits d'Auteur</a></li>
+                  <li><a href="#ml-rgpd">5. Protection des Données Personnelles (RGPD)</a></li>
+                  <li><a href="#ml-cookies">6. Cookies et Technologies de Traçage</a></li>
+                  <li><a href="#ml-responsabilite">7. Limitation de Responsabilité</a></li>
+                  <li><a href="#ml-liens">8. Liens Hypertextes</a></li>
+                  <li><a href="#ml-droit">9. Droit Applicable et Juridiction Compétente</a></li>
+                </ul>
+              </div>
+
+              <div class="sommaire-section">
+                <h3>CONDITIONS GÉNÉRALES D'UTILISATION</h3>
+                <ul>
+                  <li><a href="#cgu-objet">1. Objet et Acceptation</a></li>
+                  <li><a href="#cgu-acces">2. Accès au Site</a></li>
+                  <li><a href="#cgu-utilisation">3. Utilisation du Site</a></li>
+                  <li><a href="#cgu-propriete">4. Propriété Intellectuelle</a></li>
+                  <li><a href="#cgu-responsabilite">5. Responsabilité</a></li>
+                  <li><a href="#cgu-liens">6. Liens Hypertextes</a></li>
+                  <li><a href="#cgu-contact">7. Contact et Communication</a></li>
+                  <li><a href="#cgu-modification">8. Modification des CGU</a></li>
+                  <li><a href="#cgu-droit">9. Droit Applicable et Juridiction Compétente</a></li>
+                  <li><a href="#cgu-acceptation">10. Acceptation des CGU</a></li>
+                </ul>
+              </div>
+            </div>
+
             <div class="mentions-legales-content">
               
               <!-- MENTIONS LÉGALES -->
-              <h2>MENTIONS LÉGALES</h2>
+              <!-- MENTIONS LÉGALES -->
+              <h2 id="ml-mentions">MENTIONS LÉGALES</h2>
 
               <p>
                 Conformément aux dispositions de la loi n°2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique (LCEN), 
@@ -113,7 +210,7 @@
                 de rendre accessibles aux utilisateurs certaines informations légales.
               </p>
 
-              <h2>1. Identification de l'Éditeur du Site</h2>
+              <h2 id="ml-identification">1. Identification de l'Éditeur du Site</h2>
               
               <p>
                 Le site internet <strong>https://wolfdefansy.org</strong> (ci-après désigné "le Site") est édité par l'association 
@@ -150,7 +247,7 @@
                 garantissant ainsi sa régularité juridique et sa transparence vis-à-vis des tiers et des citoyens.
               </p>
 
-              <h2>2. Directeur de la Publication et Responsable Éditorial</h2>
+              <h2 id="ml-directeur">2. Directeur de la Publication et Responsable Éditorial</h2>
               
               <p>
                 En application des dispositions de l'article 93-2 de la loi n°82-652 du 29 juillet 1982 sur la communication audiovisuelle, 
@@ -174,7 +271,7 @@
                 des règles déontologiques et juridiques applicables aux contenus diffusés sur le Site.
               </p>
 
-              <h2>3. Hébergement du Site Internet</h2>
+              <h2 id="ml-hebergement">3. Hébergement du Site Internet</h2>
               
               <p>
                 Conformément aux dispositions de l'article 6-III-2 de la loi n°2004-575 du 21 juin 2004 pour la confiance dans l'économie 
@@ -215,7 +312,7 @@
                 dans le cadre d'une procédure légale.
               </p>
 
-              <h2>4. Propriété Intellectuelle et Droits d'Auteur</h2>
+              <h2 id="ml-propriete">4. Propriété Intellectuelle et Droits d'Auteur</h2>
               
               <h3>4.1. Principes Généraux de Protection</h3>
               
@@ -363,7 +460,7 @@
                 huissier de justice la matérialité de la contrefaçon et de faire cesser l'atteinte à ses droits.
               </p>
 
-              <h2>5. Protection des Données Personnelles et Conformité au RGPD</h2>
+              <h2 id="ml-rgpd">5. Protection des Données Personnelles et Conformité au RGPD</h2>
               
               <h3>5.1. Cadre Juridique Applicable</h3>
               
@@ -710,7 +807,7 @@
                 du responsable du traitement ou du sous-traitant, conformément à l'article 79 du RGPD.
               </p>
 
-              <h2>6. Cookies et Technologies de Traçage</h2>
+              <h2 id="ml-cookies">6. Cookies et Technologies de Traçage</h2>
               
               <h3>6.1. Définition et Cadre Juridique des Cookies</h3>
               
@@ -811,7 +908,7 @@
                 documentation en ligne.
               </p>
 
-              <h2>7. Limitation de Responsabilité</h2>
+              <h2 id="ml-responsabilite">7. Limitation de Responsabilité</h2>
               
               <h3>7.1. Disponibilité et Accessibilité du Site</h3>
               
@@ -932,7 +1029,7 @@
                 non autorisée du Site.
               </p>
 
-              <h2>8. Liens Hypertextes</h2>
+              <h2 id="ml-liens">8. Liens Hypertextes</h2>
               
               <h3>8.1. Liens Sortants vers des Sites Tiers</h3>
               
@@ -1005,7 +1102,7 @@
                 que ce lien ne respecte pas les conditions énoncées ci-dessus.
               </p>
 
-              <h2>9. Droit Applicable et Juridiction Compétente</h2>
+              <h2 id="ml-droit">9. Droit Applicable et Juridiction Compétente</h2>
               
               <h3>9.1. Loi Applicable</h3>
               
@@ -1094,9 +1191,9 @@
               <div class="section-divider"></div>
 
               <!-- CONDITIONS GÉNÉRALES D'UTILISATION -->
-              <h2 class="cgu-title">CONDITIONS GÉNÉRALES D'UTILISATION (CGU)</h2>
+              <h2 class="cgu-title" id="cgu-titre">CONDITIONS GÉNÉRALES D'UTILISATION (CGU)</h2>
 
-              <h2>1. Objet et Acceptation</h2>
+              <h2 id="cgu-objet">1. Objet et Acceptation</h2>
               <p>
                 Les présentes Conditions Générales d'Utilisation (ci-après "CGU") ont pour objet de définir les modalités 
                 et conditions d'utilisation du site <strong>https://wolfdefansy.org</strong> (ci-après "le Site"), 
@@ -1107,7 +1204,7 @@
                 En accédant au Site, l'utilisateur accepte sans réserve les présentes CGU.
               </p>
 
-              <h2>2. Accès au Site</h2>
+              <h2 id="cgu-acces">2. Accès au Site</h2>
               <h3>2.1. Accès Libre</h3>
               <p>
                 Le Site est accessible gratuitement à tout utilisateur disposant d'un accès à Internet. 
@@ -1126,7 +1223,7 @@
                 notamment technique ou de maintenance.
               </p>
 
-              <h2>3. Utilisation du Site</h2>
+              <h2 id="cgu-utilisation">3. Utilisation du Site</h2>
               <h3>3.1. Utilisation Conforme</h3>
               <p>
                 L'utilisateur s'engage à utiliser le Site de manière loyale et conforme aux présentes CGU, 
@@ -1148,7 +1245,7 @@
                 <li>Usurper l'identité de WolfDefansy ou d'un tiers</li>
               </ul>
 
-              <h2>4. Propriété Intellectuelle</h2>
+              <h2 id="cgu-propriete">4. Propriété Intellectuelle</h2>
               <h3>4.1. Droits Réservés</h3>
               <p>
                 Le logo, le nom "WolfDefansy", les images et vidéos comportant des éléments identitaires de l'association, 
@@ -1169,7 +1266,7 @@
                 libres de droits et sont soumises à leurs licences respectives.
               </p>
 
-              <h2>5. Responsabilité</h2>
+              <h2 id="cgu-responsabilite">5. Responsabilité</h2>
               <h3>5.1. Contenu du Site</h3>
               <p>
                 WolfDefansy s'efforce de fournir sur le Site des informations aussi précises et actualisées que possible. 
@@ -1198,7 +1295,7 @@
                 Il est également responsable des dommages qu'il pourrait causer au Site ou à des tiers du fait de son utilisation.
               </p>
 
-              <h2>6. Liens Hypertextes</h2>
+              <h2 id="cgu-liens">6. Liens Hypertextes</h2>
               <h3>6.1. Liens Sortants</h3>
               <p>
                 Le Site peut contenir des liens hypertextes pointant vers d'autres sites Internet. 
@@ -1217,7 +1314,7 @@
                 <a href="mailto:wolfdefansy@gmail.com">wolfdefansy@gmail.com</a>
               </p>
 
-              <h2>7. Contact et Communication</h2>
+              <h2 id="cgu-contact">7. Contact et Communication</h2>
               <p>
                 Toute communication avec WolfDefansy s'effectue exclusivement par email à l'adresse : 
                 <a href="mailto:wolfdefansy@gmail.com">wolfdefansy@gmail.com</a>
@@ -1227,7 +1324,7 @@
                 sans pouvoir garantir un délai de réponse précis.
               </p>
 
-              <h2>8. Modification des CGU</h2>
+              <h2 id="cgu-modification">8. Modification des CGU</h2>
               <p>
                 WolfDefansy se réserve le droit de modifier à tout moment les présentes CGU. 
                 Les modifications entrent en vigueur dès leur mise en ligne sur le Site.
@@ -1237,7 +1334,7 @@
                 après modification des CGU vaut acceptation par l'utilisateur des nouvelles conditions.
               </p>
 
-              <h2>9. Droit Applicable et Juridiction Compétente</h2>
+              <h2 id="cgu-droit">9. Droit Applicable et Juridiction Compétente</h2>
               <p>
                 Les présentes CGU sont régies par le droit français.
               </p>
@@ -1246,7 +1343,7 @@
                 et à défaut d'accord amiable, les tribunaux français seront seuls compétents.
               </p>
 
-              <h2>10. Acceptation des CGU</h2>
+              <h2 id="cgu-acceptation">10. Acceptation des CGU</h2>
               <p>
                 L'utilisation du Site implique l'acceptation pleine et entière des présentes CGU. 
                 Si l'utilisateur n'accepte pas tout ou partie des CGU, il doit s'abstenir d'utiliser le Site.
@@ -1267,5 +1364,4 @@
     <script src="/js/oneko.js"></script>
   </body>
 </html>
-
 
